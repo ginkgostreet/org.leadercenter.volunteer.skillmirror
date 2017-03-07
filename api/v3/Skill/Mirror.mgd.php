@@ -12,11 +12,7 @@ return array (
     array (
       'version' => 3,
       'name' => 'Skill.Mirror',
-      'description' => 'Creates a custom field on the Volunteer Project entity
-        for each skill-related custom field on the Volunteer contact type. This
-        job can be run safely (i.e., without creating duplicate skills) multiple
-        times, but only need to be run when there are skills on the contact that
-        are not reflected on the project.',
+      'description' => ts('Creates a custom field on the volunteer project entity for each skill-related custom field on volunteer contacts. Can be run safely (i.e., without creating duplicates) multiple times, but need only be run when there are unmirrored skills on the contact.', array('domain' => 'org.leadercenter.volunteer.skillmirror')),
       'run_frequency' => 'Always',
       'api_entity' => 'Skill',
       'api_action' => 'Mirror',
