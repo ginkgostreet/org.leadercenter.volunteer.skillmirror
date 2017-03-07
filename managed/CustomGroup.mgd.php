@@ -11,7 +11,7 @@ return array (
     'params' =>
     array(
       'extends' => 'Volunteer Project',
-      'is_reserved' => 1,
+      'is_reserved' => 0,
       'name' => 'Project_Skills',
       'title' => ts('Skills Needed', array('domain' => 'org.leadercenter.volunteer.skillmirror')),
       'version' => 3,
