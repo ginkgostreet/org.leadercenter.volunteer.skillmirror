@@ -82,5 +82,15 @@ function civicrm_api3_skill_Mirror($params) {
  *   An API-ready set of customField parameters.
  */
 function _skill_mirror_transform(array $field, array $context) {
+  // Make sure we don't update the source field.
+  unset($field['id']);
 
+  $field['custom_group_id'] = $context['target_group_id'];
+
+  // on the project entity (compared to the contact) the meaning of the skill
+  // field changes slightly -- we want to know the *minimum* level required,
+  // so a scalar value is more appropriate than a range
+  $field['html_type'] = 'Select';
+
+  return $field;
 }
