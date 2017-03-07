@@ -11,7 +11,8 @@ return array (
     'params' => 
     array (
       'version' => 3,
-      'name' => 'Skill.Mirror',
+      'is_active' => 0,
+      'name' => 'Mirror skills',
       'description' => ts('Creates a custom field on the volunteer project entity for each skill-related custom field on volunteer contacts. Can be run safely (i.e., without creating duplicates) multiple times, but need only be run when there are unmirrored skills on the contact.', array('domain' => 'org.leadercenter.volunteer.skillmirror')),
       'run_frequency' => 'Always',
       'api_entity' => 'Skill',
