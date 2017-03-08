@@ -37,7 +37,7 @@ function civicrm_api3_skill_Mirror($params) {
   $targetGroup = CRM_Utils_Array::value('target', $params, 'Project_Skills');
   // api.CustomField.create doesn't seem to accept custom group name, so get the ID
   $context['target_group_id'] = civicrm_api3('CustomGroup', 'getvalue', array(
-    'extends' => 'Volunteer Project',
+    'extends' => 'VolunteerProject',
     'name' => $targetGroup,
     'return' => 'id',
   ));

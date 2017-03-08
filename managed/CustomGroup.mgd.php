@@ -10,7 +10,7 @@ return array (
     'entity' => 'CustomGroup',
     'params' =>
     array(
-      'extends' => 'Volunteer Project',
+      'extends' => 'VolunteerProject',
       'is_reserved' => 0,
       'name' => 'Project_Skills',
       'title' => ts('Skills Needed', array('domain' => 'org.leadercenter.volunteer.skillmirror')),
